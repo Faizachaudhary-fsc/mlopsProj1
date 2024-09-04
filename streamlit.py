@@ -5,7 +5,7 @@ from sklearn.model_selection import train_test_split
 import streamlit as st
 
 model = joblib.load("liveModelV1.pk1")
-data = pd.read_csv("mobile_price_range_data (1)")
+data = pd.read_csv("mobile_price_range_data (1).csv")
 
 X= data.iloc[:  -1]
 y= data.iloc[: , -1]
